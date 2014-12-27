@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'yaml'
+require 'uri'
 require 'active_support'
 
 module Plaintweet
@@ -8,13 +8,13 @@ module Plaintweet
     set :views, settings.root + '/views'
 
     get '/' do
-      erb :about
+      URI.escape erb :about
     end
 
     get %r{/(\d+)} do |id|
       begin
         @tweet = Repository.new.tweet(id)
-        erb :tweet, content_type: 'text/plain'
+        URI.escape erb :tweet, content_type: 'text/plain'
       rescue
         $!.message
       end
