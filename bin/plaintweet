@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'plaintweet'
+include Plaintweet
+
+puts Repository.new.tweet(ARGV[0]).text
