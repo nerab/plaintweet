@@ -11,22 +11,15 @@ module Plaintweet
       enable :logging
     end
 
-    @quoting = false
-
-    before :agent => /Workflow/ do
-      logger.info "This is a Workflow agent"
-      @quoting = true
-    end
-
     get '/' do
-      URI.escape erb :about
+      erb :about
     end
 
     get %r{/(\d+)} do |id|
       begin
         @tweet = Repository.new.tweet(id)
         
-        if @quoting
+        if params[:q] && 'false' != params[:q]
           URI.escape erb :tweet, content_type: 'text/plain'
         else
           erb :tweet, content_type: 'text/plain'
