@@ -18,7 +18,7 @@ module Plaintweet
     get %r{/(\d+)} do |id|
       begin
         @tweet = Repository.new.tweet(id)
-        
+
         if params[:q] && 'false' != params[:q]
           URI.escape erb :tweet, content_type: 'text/plain'
         else

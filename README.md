@@ -1,31 +1,22 @@
 # Plaintweet
 
-TODO: Write a gem description
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'plaintweet'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install plaintweet
+Provides a plain-text version of a given tweet.
 
 ## Usage
 
-TODO: Write usage instructions here
+Command line:
 
-## Contributing
+```
+$ plaintweet 702813031701487617
+```
 
-1. Fork it ( https://github.com/[my-github-username]/plaintweet/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+Web server:
+
+```
+$ rackup
+$ curl localhost:9292/702813031701487617
+```
+
+## Installation
+
+    $ gem install plaintweet

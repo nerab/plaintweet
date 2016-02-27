@@ -4,19 +4,17 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'plaintweet/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "plaintweet"
+  spec.name          = 'plaintweet'
   spec.version       = Plaintweet::VERSION
-  spec.authors       = ["Nicholas E. Rabenau"]
-  spec.email         = ["nerab@gmx.at"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.authors       = ['Nicholas E. Rabenau']
+  spec.email         = ['nerab@gmx.at']
+  spec.summary       = 'Provides a plain-text version of a given tweet.'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
   spec.add_dependency 'sinatra'
   spec.add_dependency 'twitter'
@@ -24,7 +22,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'dotenv'
   spec.add_development_dependency 'rerun'
   spec.add_development_dependency 'minitest'
   spec.add_development_dependency 'rack-test'
@@ -34,7 +31,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'guard-minitest'
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'pry-stack_explorer'
-  spec.add_development_dependency 'rb-inotify'
-  spec.add_development_dependency 'rb-fsevent'
-  spec.add_development_dependency 'rb-readline'
 end
