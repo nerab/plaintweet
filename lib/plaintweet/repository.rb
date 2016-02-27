@@ -2,9 +2,9 @@ require 'twitter'
 
 module Plaintweet
   class Repository
-  	def tweet(id)
-  		twitter.status(id)
-  	end
+    def tweet(id)
+      twitter.status(id)
+    end
 
     private
 

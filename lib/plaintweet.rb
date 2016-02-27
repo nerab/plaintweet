@@ -1,5 +1,4 @@
 module Plaintweet
-  # Your code goes here...
 end
 
 require 'plaintweet/repository'

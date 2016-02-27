@@ -1,7 +1,7 @@
 #!/usr/bin/env rake
 require 'rake/testtask'
 
-task :default => :test
+task default: :test
 
 Rake::TestTask.new do |test|
   test.libs << 'lib' << 'test' << 'test/unit'
