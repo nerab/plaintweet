@@ -25,7 +25,7 @@ module Plaintweet
           erb :tweet, content_type: 'text/plain'
         end
       rescue
-        $!.message
+        $ERROR_INFO.message
       end
     end
   end

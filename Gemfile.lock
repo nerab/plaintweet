@@ -1,11 +1,3 @@
-PATH
-  remote: .
-  specs:
-    plaintweet (0.0.1)
-      activesupport
-      sinatra
-      twitter
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -125,18 +117,20 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   bundler
   guard
   guard-bundler
   guard-minitest
   guard-rack
   minitest
-  plaintweet!
   pry
   pry-stack_explorer
   rack-test
   rake
   rerun
+  sinatra
+  twitter
 
 BUNDLED WITH
    1.11.2
