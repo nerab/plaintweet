@@ -13,3 +13,4 @@
 *.a
 mkmf.log
 .envrc
+.cache_rake_t

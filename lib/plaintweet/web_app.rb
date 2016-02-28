@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'tilt/erb'
 require 'uri'
 require 'active_support'
 
