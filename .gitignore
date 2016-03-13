@@ -14,3 +14,4 @@
 mkmf.log
 .envrc
 .cache_rake_t
+.rake_t_cache
