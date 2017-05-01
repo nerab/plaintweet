@@ -1,3 +1,10 @@
+*.a
+*.bundle
+*.o
+*.so
+.cache_rake_t
+.envrc
+.rake_t_cache
 /.bundle/
 /.yardoc
 /Gemfile.lock
@@ -7,11 +14,5 @@
 /pkg/
 /spec/reports/
 /tmp/
-*.bundle
-*.so
-*.o
-*.a
+docker-compose-prod.yml
 mkmf.log
-.envrc
-.cache_rake_t
-.rake_t_cache
