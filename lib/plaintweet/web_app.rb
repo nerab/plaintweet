@@ -4,6 +4,7 @@ require 'sinatra'
 require 'tilt/erb'
 require 'uri'
 require 'active_support'
+require 'plaintweet/repository'
 
 module Plaintweet
   class WebApp < Sinatra::Base
@@ -18,7 +19,7 @@ module Plaintweet
       erb :about
     end
 
-    get %r{/(\d+)} do |id|
+    get %r{/.*/(\d+)} do |id|
       begin
         @tweet = Repository.new.tweet(id)
 

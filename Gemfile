@@ -14,8 +14,10 @@ group 'development' do
   gem 'guard-bundler'
   gem 'guard-rspec'
   gem 'pry'
+  gem 'rack-test'
   gem 'rake'
   gem 'rerun'
   gem 'rspec'
   gem 'rubocop'
+  gem 'webmock'
 end
