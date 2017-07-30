@@ -1,6 +1,14 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
 require 'plaintweet'
 include Plaintweet
+
+if ARGV.empty?
+  warn 'Error: Missing argument. Which tweet do you want to see?'
+  exit 1
+end
 
 puts Repository.new.tweet(ARGV[0]).text

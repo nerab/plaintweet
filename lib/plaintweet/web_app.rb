@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'sinatra'
 require 'tilt/erb'
 require 'uri'
@@ -20,7 +22,7 @@ module Plaintweet
       begin
         @tweet = Repository.new.tweet(id)
 
-        if params[:q] && 'false' != params[:q]
+        if params[:q] && params[:q] != 'false'
           URI.escape erb :tweet, content_type: 'text/plain'
         else
           erb :tweet, content_type: 'text/plain'

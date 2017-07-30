@@ -1,21 +1,21 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-gem 'sinatra'
-gem 'foreman'
-gem 'unicorn'
-gem 'twitter'
 gem 'activesupport'
+gem 'foreman'
+gem 'sinatra'
+gem 'twitter'
+gem 'unicorn'
 
 group 'development' do
   gem 'bundler'
-  gem 'rake'
-  gem 'rerun'
-  gem 'minitest'
-  gem 'rack-test'
   gem 'guard'
   gem 'guard-bundler'
-  gem 'guard-rack'
-  gem 'guard-minitest'
+  gem 'guard-rspec'
   gem 'pry'
-  gem 'pry-stack_explorer'
+  gem 'rake'
+  gem 'rerun'
+  gem 'rspec'
+  gem 'rubocop'
 end
