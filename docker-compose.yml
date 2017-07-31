@@ -6,6 +6,4 @@ services:
     environment:
       - TWITTER_CONSUMER_KEY
       - TWITTER_CONSUMER_SECRET
-      - TWITTER_OAUTH_TOKEN
-      - TWITTER_OAUTH_TOKEN_SECRET
     restart: on-failure
