@@ -5,6 +5,7 @@ require 'tilt/erb'
 require 'uri'
 require 'active_support'
 require 'plaintweet/repository'
+require 'english'
 
 module Plaintweet
   class WebApp < Sinatra::Base

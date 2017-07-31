@@ -18,10 +18,6 @@ describe 'Web App' do
     allow(status).to receive(:user).and_return(user)
   end
 
-  after do
-    WebMock.allow_net_connect!
-  end
-
   def app
     Plaintweet::WebApp
   end
