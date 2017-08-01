@@ -3,10 +3,9 @@
 source 'https://rubygems.org'
 
 gem 'activesupport'
-gem 'foreman'
 gem 'sinatra'
 gem 'twitter'
-gem 'unicorn'
+gem 'puma'
 
 group 'development' do
   gem 'bundler'

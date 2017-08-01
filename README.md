@@ -9,8 +9,6 @@ The following configuration settings need to be present as environment variables
 ```bash
 export TWITTER_CONSUMER_KEY=********
 export TWITTER_CONSUMER_SECRET=********
-export TWITTER_OAUTH_TOKEN=********
-export TWITTER_OAUTH_TOKEN_SECRET=********
 ```
 
 Then, the web app can be started:

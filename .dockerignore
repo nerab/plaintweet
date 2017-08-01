@@ -1,0 +1,13 @@
+.git
+.dockerignore
+README.*
+.DS_Store
+.bundle
+.byebug_history
+.cache_rake_t
+.envrc
+Guardfile
+LICENSE
+deployment
+spec
+tmp
