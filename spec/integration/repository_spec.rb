@@ -6,10 +6,6 @@ require 'plaintweet/repository'
 RSpec.describe 'Tweets Repository', integration: true do
   subject(:repository) { Plaintweet::Repository.new }
 
-  before do
-    WebMock.allow_net_connect!
-  end
-
   it 'provides the tweet' do
     tweet = repository.tweet('https://twitter.com/dcxxx187/status/891545131417030656')
     expect(tweet).to be
