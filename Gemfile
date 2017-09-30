@@ -3,9 +3,9 @@
 source 'https://rubygems.org'
 
 gem 'activesupport'
+gem 'puma'
 gem 'sinatra'
 gem 'twitter'
-gem 'puma'
 
 group 'development' do
   gem 'bundler'
