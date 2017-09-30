@@ -2,7 +2,7 @@
 
 require 'sinatra'
 require 'tilt/erb'
-require 'uri'
+require 'cgi'
 require 'active_support'
 require 'plaintweet/repository'
 require 'English'
@@ -21,16 +21,12 @@ module Plaintweet
     end
 
     get %r{/.*/(\d+)} do |id|
-      begin
-        @tweet = Repository.new.tweet(id)
+      @tweet = Repository.new.tweet(id)
 
-        if params[:q] && params[:q] != 'false'
-          URI.escape erb :tweet, content_type: 'text/plain'
-        else
-          erb :tweet, content_type: 'text/plain'
-        end
-      rescue
-        $ERROR_INFO.message
+      if params[:q] && params[:q] != 'false'
+        CGI.escape erb :tweet, content_type: 'text/plain'
+      else
+        erb :tweet, content_type: 'text/plain'
       end
     end
   end
