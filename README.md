@@ -1,5 +1,7 @@
 # Plaintweet
 
+[![Build Status](https://travis-ci.org/nerab/plaintweet.svg?branch=master)](https://travis-ci.org/nerab/plaintweet)
+
 Provides a plain-text version of a given tweet.
 
 ## Usage
