@@ -54,3 +54,4 @@ describe 'Web App' do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
