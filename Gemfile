@@ -12,6 +12,7 @@ group 'development' do
   gem 'guard'
   gem 'guard-bundler'
   gem 'guard-rspec'
+  gem 'mry'
   gem 'pry'
   gem 'rack-test'
   gem 'rake'
