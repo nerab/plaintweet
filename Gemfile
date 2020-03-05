@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'activesupport'
-gem 'puma'
+gem 'puma', '>= 4.3.3'
 gem 'sinatra'
 gem 'twitter'
 
