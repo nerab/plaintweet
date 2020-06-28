@@ -8,7 +8,7 @@ RUN apk add --no-cache                         \
 
 WORKDIR /app
 ADD . /app
-RUN gem install bundler --no-rdoc
+RUN gem install bundler --no-document
 RUN bundle config --global silence_root_warning 1
 RUN bundle install --jobs 4 --without=development test
 
